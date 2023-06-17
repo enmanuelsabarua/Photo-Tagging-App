@@ -5,3 +5,14 @@
     margin: 0;
     font-family: 'Roboto Mono', monospace;
 }
+
+.title {
+    font-family: 'Serendius';
+    justify-self: start;
+    transition: transform .3s ease;
+}
+
+.title span {
+    font-family: 'Serendius';
+    color: rgb(6, 255, 56);
+}

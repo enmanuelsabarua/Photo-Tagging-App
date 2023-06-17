@@ -18,7 +18,7 @@ header {
     font-weight: bold;
 }
 
-.title {
+/* .title {
     font-family: 'Serendius';
     justify-self: start;
     transition: transform .3s ease;
@@ -27,7 +27,7 @@ header {
 .title span {
     font-family: 'Serendius';
     color: rgb(6, 255, 56);
-}
+} */
 
 .title:hover {
     cursor: pointer;

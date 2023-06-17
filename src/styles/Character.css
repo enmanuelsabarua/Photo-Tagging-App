@@ -1,0 +1,35 @@
+.character-img {
+    width: 90px;
+}
+
+.character-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease;
+}
+
+.character-info:hover {
+    transform: scale(1.05);
+}
+
+.difficulty {
+    text-align: right;
+    font-weight: bold;
+}
+
+.character {
+    margin-top: 10px;
+}
+
+.easy {
+    color: rgb(55, 166, 55);
+}
+
+.medium {
+    color: rgb(194, 194, 69);
+}
+
+.hard {
+    color: rgb(209, 40, 40);
+}
