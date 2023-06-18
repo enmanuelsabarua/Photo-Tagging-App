@@ -1,15 +1,28 @@
 .levels-background {
     position: fixed;
+    padding-top: 100px;
     top: 0;
     background-color: rgba(0, 0, 0, 0.836);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    overflow-y: scroll;
+}
+
+.levels-background::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
     text-align: center;
     color: white;
+}
+
+.levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 200px;
 }
