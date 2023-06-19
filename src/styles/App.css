@@ -16,3 +16,7 @@
     font-family: 'Serendius';
     color: rgb(6, 255, 56);
 }
+
+.hide {
+    display: none;
+}
