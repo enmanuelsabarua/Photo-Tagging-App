@@ -9,11 +9,26 @@ import { useState } from 'react';
 function App() {
   const [level, setLevel] = useState(image1);
 
+  let seconds = 0
+
+  function upTimer() {
+
+      ++seconds;
+
+      let hour = Math.floor(seconds / 3600);
+
+      let minute = Math.floor((seconds - hour * 3600) / 60);
+
+      let updSecond = seconds - (hour * 3600 + minute * 60);
+
+      document.querySelector('.timer').innerHTML = hour + ":" + minute + ":" + updSecond;
+  }
+
   return (
     <div>
-      <Header />
+      <Header upTimer={upTimer}/>
       <Image image={level} height={level === image2 ? 3858 : 3708}/>
-      <Levels setLevel={setLevel}/>
+      <Levels setLevel={setLevel} upTimer={upTimer}/>
     </div>
   );
 }
