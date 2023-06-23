@@ -4,13 +4,18 @@ import DropDownCharacters from './DropDownCharacters';
 
 import image1 from '../imgs/A.D.-2.222.webp';
 
-export default function Header({levelsInfo, level}) {
+export default function Header({levelsInfo, level, setStartScreen, timer}) {
     const [showDropDown, setShowDropDown] = useState('hide');
+
+    const selectOtherLevel = () => {
+        setStartScreen('levels-background');
+        timer().stopTimer();
+    }
 
     return (
         <header>
             <div className="container">
-                <h1 className='title'>Find The <span>Characters</span></h1>
+                <h1 className='title' onClick={selectOtherLevel}>Find The <span>Characters</span></h1>
 
                 <div className="timer">0:0:0</div>
 
