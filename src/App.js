@@ -4,7 +4,7 @@ import Image from './components/Image';
 import image1 from './imgs/A.D.-2.222.webp';
 import image2 from './imgs/ad-2222-undrcty.webp';
 import Levels from './components/Levels';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import character1Level1 from './imgs/zoidberg.png'
 import character2Level1 from './imgs/patrick-star.webp';
@@ -33,6 +33,7 @@ function App() {
     
     const stopTimer = () =>  {
       seconds = 0;
+      document.querySelector('.timer').innerHTML = 0 + ":" + 0 + ":" + 0
       clearInterval(interval);
     }
 

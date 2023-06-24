@@ -2,8 +2,46 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 }
 
 .img:hover {
-    cursor: url('../imgs/cursor.png'), auto;
+    cursor: url('../imgs/cursor.png') 50 50, auto;
+}
+
+.selection {
+    background-image: url('../imgs/selection.png');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.drop-down-selection {
+    position: absolute;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.813);
+}
+
+.drop-down-selection:hover {
+    cursor: pointer;
+}
+
+.drop-down-selection p {
+    padding: 10px;
+    transition: .3s ease;
+}
+
+.drop-down-selection p:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+.drop-down-selection p:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+}
+
+.drop-down-selection p:hover {
+    background-color: rgba(255, 255, 255, 0.479);
+    font-size: 1.04rem;
 }
