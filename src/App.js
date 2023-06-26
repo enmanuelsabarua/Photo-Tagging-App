@@ -70,7 +70,7 @@ function App() {
         btnLevel: 'level1-btn',
     },
     {
-        levelName: 'Cyberpunk Underground (+18)',
+        levelName: 'Cyberpunk Underground 🔞',
         creator: 'by Egor Klyuchnyk',
         image: level2,
         name1: 'Roger Smith',

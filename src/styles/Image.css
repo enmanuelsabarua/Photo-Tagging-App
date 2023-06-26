@@ -2,6 +2,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     position: relative;
 }
 
@@ -22,6 +23,7 @@
     font-size: 16px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.813);
+    z-index: 1;
 }
 
 .drop-down-selection:hover {
@@ -44,4 +46,34 @@
 .drop-down-selection p:hover {
     background-color: rgba(255, 255, 255, 0.479);
     font-size: 1.04rem;
+}
+
+.character1 {
+    position: absolute;
+    width: 272px;
+    height: 292px;
+    background-color: #ff000070;
+    top: 50%;
+    right: 50%;
+    margin: 484px -700px 0 0;
+}
+
+.character2 {
+    position: absolute;
+    width: 132px;
+    height: 115px;
+    background-color: #ff767670;
+    top: 50%;
+    right: 50%;
+    margin: -75px -332px 0 0;
+}
+
+.character3 {
+    position: absolute;
+    width: 119px;
+    height: 115px;
+    background-color: #ff0000ae;
+    top: 50%;
+    right: 50%;
+    margin: 1012px -311px 0 0;
 }
