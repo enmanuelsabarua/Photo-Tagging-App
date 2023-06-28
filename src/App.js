@@ -55,6 +55,7 @@ function App() {
 
   const levelsInfo = [
     {
+        id: 'level0',
         levelName: 'AD 2222 - UNDRCTY',
         creator: 'by Egor Klyuchnyk',
         image: level1,
@@ -68,8 +69,9 @@ function App() {
         cartoon2: 'Sponge Bob',
         cartoon3: 'Marvel',
         btnLevel: 'level1-btn',        
-    },
-    {
+      },
+      {
+        id: 'level1',
         levelName: 'Cyberpunk Underground 🔞',
         creator: 'by Egor Klyuchnyk',
         image: level2,

@@ -31,11 +31,24 @@ export default function Image({ image, height, charactersPosition }) {
   
   const verifySelection = (e) => {
     const character = e.target.classList[0];;
+    const foundMessage = document.querySelector('.found-message');
+    const missMessage = document.querySelector('.miss-message');
 
     if (userSelection === character) {
-      console.log(`${character} found`);
+      missMessage.classList.remove('show-message');
+      
+      foundMessage.classList.add('show-message');
+      setTimeout(() => {
+        foundMessage.classList.remove('show-message');
+      }, 3000);
+      
     } else {
-      console.log('Keep looking');
+      foundMessage.classList.remove('show-message');
+
+      missMessage.classList.add('show-message');
+      setTimeout(() => {
+        missMessage.classList.remove('show-message');
+      }, 3000);
     }
   } 
     
@@ -47,6 +60,15 @@ export default function Image({ image, height, charactersPosition }) {
             }}
             onClick={(e) => showSelectionMenu(e)}
             >
+
+            <div className="found-message message">
+              <p>Character Found, great!</p>
+            </div>
+
+            <div className="miss-message message">
+              <p>Keep looking!</p>
+            </div>
+
             <div className='selection-menu hide'>
                 <div className='selection' style={{top: mousePos.y - 50, left: mousePos.x - 50}}></div>
                 <div className='drop-down-selection' style={{top: mousePos.y + 40, left: mousePos.x + 30}} onClick={(e) => verifySelection(e)}>
