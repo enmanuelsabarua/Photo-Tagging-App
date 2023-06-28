@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/Image.css';
 import image1 from '../imgs/A.D.-2.222.webp';
 
-export default function Image({ image, height }) {
+export default function Image({ image, height, charactersPosition }) {
     const [mousePos, setMousePos] = useState({});
     const [userSelection, setUserSelection] = useState('');
 
@@ -56,9 +56,21 @@ export default function Image({ image, height }) {
                 </div>
             </div>
 
-            <div className="character1 character1-selection"></div>
-            <div className="character2 character2-selection"></div>
-            <div className="character3 character3-selection"></div>
+            <div className="character1 character1-selection" style={{
+              margin: `${charactersPosition.characterPosition1}`, 
+              width: `${charactersPosition.characterSize1.width}`,
+              height: `${charactersPosition.characterSize1.height}`,
+              }}></div>
+            <div className="character2 character2-selection" style={{
+              margin: `${charactersPosition.characterPosition2}`,               
+              width: `${charactersPosition.characterSize2.width}`,
+              height: `${charactersPosition.characterSize2.height}`,
+              }}></div>
+            <div className="character3 character3-selection" style={{
+              margin: `${charactersPosition.characterPosition3}`,               
+              width: `${charactersPosition.characterSize3.width}`,
+              height: `${charactersPosition.characterSize3.height}`,
+              }}></div>
           </div>
         </main>
     );

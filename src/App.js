@@ -67,7 +67,7 @@ function App() {
         cartoon1: 'Futurama',
         cartoon2: 'Sponge Bob',
         cartoon3: 'Marvel',
-        btnLevel: 'level1-btn',
+        btnLevel: 'level1-btn',        
     },
     {
         levelName: 'Cyberpunk Underground 🔞',
@@ -83,13 +83,56 @@ function App() {
         cartoon2: 'Attack On Titan',
         cartoon3: 'Adventure Time',
         btnLevel: 'level2-btn',
+        characterPosition: {
+          characterPosition1: '484px -700px 0 0',
+          characterPosition2: '-75px -332px 0 0',
+          characterPosition3: '1012px -311px 0 0',
+        },
     },
-]
+
+  ]
+
+  const charactersPosition = {
+    charactersPosition1: {
+      characterPosition1: '484px -700px 0 0',
+      characterPosition2: '-75px -332px 0 0',
+      characterPosition3: '1012px -311px 0 0',
+      characterSize1: {
+        width: '272px',
+        height: '292px'
+      },
+      characterSize2: {
+        width: '132px',
+        height: '115px',
+      },
+      characterSize3: {
+        width: '119px',
+        height: '115px',
+      },
+    },
+    charactersPosition2: {
+      characterPosition1: '10px 88px 0px 0px',
+      characterPosition2: '1271px 606px 0px 0px',
+      characterPosition3: '18px -501px 0px 0px',
+      characterSize1: {
+        width: '118px',
+        height: '156px'
+      },
+      characterSize2: {
+        width: '121px',
+        height: '245px',
+      },
+      characterSize3: {
+        width: '91px',
+        height: '88px',
+      },
+    },
+  }
 
   return (
     <div>
       <Header upTimer={upTimer} levelsInfo={levelsInfo} level={level} setStartScreen={setStartScreen}  timer={timer}/>
-      <Image image={level} height={level === image2 ? 3395 : 3150}/>
+      <Image image={level} height={level === image2 ? 3395 : 3150} charactersPosition={level === image1 ? charactersPosition.charactersPosition1 : charactersPosition.charactersPosition2}/>
       <Levels setLevel={setLevel} upTimer={upTimer} levelsInfo={levelsInfo} startScreen={startScreen} setStartScreen={setStartScreen} timer={timer}/>
     </div>
   );
