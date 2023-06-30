@@ -50,21 +50,21 @@
 
 .character1 {
     position: absolute;
-    background-color: #ff000070;
+    /* background-color: #ff000070; */
     top: 50%;
     right: 50%;
 }
 
 .character2 {
     position: absolute;
-    background-color: #ff767670;
+    /* background-color: #ff767670; */
     top: 50%;
     right: 50%;
 }
 
 .character3 {
     position: absolute;
-    background-color: #ff0000ae;
+    /* background-color: #ff0000ae; */
     top: 50%;
     right: 50%;
 }

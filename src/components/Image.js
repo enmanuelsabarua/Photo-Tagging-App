@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/Image.css';
 import image1 from '../imgs/A.D.-2.222.webp';
 
-export default function Image({ image, height, charactersPosition }) {
+export default function Image({ image, height, charactersPosition, setCharacterSelection }) {
     const [mousePos, setMousePos] = useState({});
     const [userSelection, setUserSelection] = useState('');
 
@@ -31,6 +31,7 @@ export default function Image({ image, height, charactersPosition }) {
   
   const verifySelection = (e) => {
     const character = e.target.classList[0];;
+
     const foundMessage = document.querySelector('.found-message');
     const missMessage = document.querySelector('.miss-message');
 
@@ -41,6 +42,14 @@ export default function Image({ image, height, charactersPosition }) {
       setTimeout(() => {
         foundMessage.classList.remove('show-message');
       }, 3000);
+
+      if (character === 'character1-selection') {
+        setCharacterSelection(prevState => [...prevState, 0]);
+      } else if (character === 'character2-selection') {
+        setCharacterSelection(prevState => [...prevState, 1]);
+      } else if (character === 'character3-selection') {
+        setCharacterSelection(prevState => [...prevState, 2]);
+      }
       
     } else {
       foundMessage.classList.remove('show-message');

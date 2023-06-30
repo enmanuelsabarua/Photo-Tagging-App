@@ -22,6 +22,8 @@ function App() {
   const [startScreen, setStartScreen] = useState('levels-background');
   const [interval, setIntervalState] = useState(0);
 
+  const [characterSelection, setCharacterSelection] = useState([]);
+
   let seconds = 0;
   
   const timer = () => {
@@ -33,7 +35,7 @@ function App() {
     
     const stopTimer = () =>  {
       seconds = 0;
-      document.querySelector('.timer').innerHTML = 0 + ":" + 0 + ":" + 0
+      document.querySelector('.timer').innerHTML = 0 + ":" + 0 + ":" + 0;
       clearInterval(interval);
     }
 
@@ -133,8 +135,8 @@ function App() {
 
   return (
     <div>
-      <Header upTimer={upTimer} levelsInfo={levelsInfo} level={level} setStartScreen={setStartScreen}  timer={timer}/>
-      <Image image={level} height={level === image2 ? 3395 : 3150} charactersPosition={level === image1 ? charactersPosition.charactersPosition1 : charactersPosition.charactersPosition2}/>
+      <Header characterSelection={characterSelection} upTimer={upTimer} levelsInfo={levelsInfo} level={level} setStartScreen={setStartScreen}  timer={timer}/>
+      <Image setCharacterSelection={setCharacterSelection} image={level} height={level === image2 ? 3395 : 3150} charactersPosition={level === image1 ? charactersPosition.charactersPosition1 : charactersPosition.charactersPosition2}/>
       <Levels setLevel={setLevel} upTimer={upTimer} levelsInfo={levelsInfo} startScreen={startScreen} setStartScreen={setStartScreen} timer={timer}/>
     </div>
   );
