@@ -1,18 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/Header.css';
 import DropDownCharacters from './DropDownCharacters';
 
 import image1 from '../imgs/A.D.-2.222.webp';
 
-export default function Header({levelsInfo, level, setStartScreen, timer, characterSelection}) {
+export default function Header({time, counter, setCounter, levelsInfo, level, setStartScreen, timer, characterSelection}) {
     const [showDropDown, setShowDropDown] = useState('hide');
 
-    const counter = (+characterSelection.length - 3) * -1;
+    useEffect(() => {
+        setCounter(3);
+    }, []);
 
     const selectOtherLevel = () => {
         setStartScreen('levels-background');
         document.querySelectorAll('.level-card').forEach(level => level.classList.add('show-level'));
-        timer().stopTimer();
+        timer().stopTimer(1);
     }
 
     return (
@@ -20,7 +22,7 @@ export default function Header({levelsInfo, level, setStartScreen, timer, charac
             <div className="container">
                 <h1 className='title' onClick={selectOtherLevel}>Find The <span>Characters</span></h1>
 
-                <div className="timer">0:0:0</div>
+                <div className="timer">{time}</div>
 
                 <div className='counter' onClick={() => {showDropDown === 'hide' ? setShowDropDown('') : setShowDropDown('hide')}}>
                     {counter}
@@ -33,7 +35,7 @@ export default function Header({levelsInfo, level, setStartScreen, timer, charac
                                     <DropDownCharacters characterSelection={characterSelection} levelName={levelsInfo[1].levelName} name1={levelsInfo[1].name1} name2={levelsInfo[1].name2} name3={levelsInfo[1].name3} character1={levelsInfo[1].character1} character2={levelsInfo[1].character2} character3={levelsInfo[1].character3} cartoon1={levelsInfo[1].cartoon1} cartoon2={levelsInfo[1].cartoon2} cartoon3={levelsInfo[1].cartoon3} />
                             }
                         </div>   
-                        : null                 
+                        : timer().stopTimer()   
                     }
                 </div>
             </div>

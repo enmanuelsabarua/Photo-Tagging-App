@@ -27,7 +27,7 @@ export default function DropDownCharacters({ character1, character2, character3,
         <div className='drop-down-characters'>
         {characterInfo.map((character, index) => {
             if (!characterSelection.includes(index)) {
-                return <DropDownCharacter  difficulty={character.difficulty} characterName={character.characterName}  cartoon={character.cartoon} image={character.image} />
+                return <DropDownCharacter key={character.characterName}  difficulty={character.difficulty} characterName={character.characterName}  cartoon={character.cartoon} image={character.image} />
             }
 
             return null;

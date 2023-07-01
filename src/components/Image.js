@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/Image.css';
 import image1 from '../imgs/A.D.-2.222.webp';
 
-export default function Image({ image, height, charactersPosition, setCharacterSelection }) {
+export default function Image({setCounter, counter, time, image, height, charactersPosition, setCharacterSelection }) {
     const [mousePos, setMousePos] = useState({});
     const [userSelection, setUserSelection] = useState('');
 
@@ -36,6 +36,7 @@ export default function Image({ image, height, charactersPosition, setCharacterS
     const missMessage = document.querySelector('.miss-message');
 
     if (userSelection === character) {
+      setCounter(counter - 1);
       missMessage.classList.remove('show-message');
       
       foundMessage.classList.add('show-message');
@@ -60,6 +61,11 @@ export default function Image({ image, height, charactersPosition, setCharacterS
       }, 3000);
     }
   } 
+
+  const hideFinishedTime = () => {
+    setCounter(3);
+    setCharacterSelection([]);
+  }
     
     return (
         <main>
@@ -87,6 +93,7 @@ export default function Image({ image, height, charactersPosition, setCharacterS
                 </div>
             </div>
 
+
             <div className="character1 character1-selection" style={{
               margin: `${charactersPosition.characterPosition1}`, 
               width: `${charactersPosition.characterSize1.width}`,
@@ -102,6 +109,13 @@ export default function Image({ image, height, charactersPosition, setCharacterS
               width: `${charactersPosition.characterSize3.width}`,
               height: `${charactersPosition.characterSize3.height}`,
               }}></div>
+          </div>
+
+          <div className={`finished-time ${counter ? '' : 'show-finished-time'}`}>
+            <h2>Your Time:</h2>
+            <p>{time}</p>
+
+            <button type='button' className='continue-btn' onClick={hideFinishedTime}>Continue</button>
           </div>
         </main>
     );
