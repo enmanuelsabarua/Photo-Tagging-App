@@ -1,6 +1,7 @@
 import './styles/App.css';
 import Header from './components/Header';
 import Image from './components/Image';
+import Footer from './components/Footer';
 import image1 from './imgs/A.D.-2.222.webp';
 import image2 from './imgs/ad-2222-undrcty.webp';
 import Levels from './components/Levels';
@@ -139,6 +140,7 @@ function App() {
       <Header time={time} setCounter={setCounter} counter={counter} characterSelection={characterSelection} upTimer={upTimer} levelsInfo={levelsInfo} level={level} setStartScreen={setStartScreen}  timer={timer}/>
       <Image setStartScreen={setStartScreen} setCounter={setCounter} counter={counter} time={time} setCharacterSelection={setCharacterSelection} image={level} height={level === image2 ? 3395 : 3150} charactersPosition={level === image1 ? charactersPosition.charactersPosition1 : charactersPosition.charactersPosition2} collections={level === image1 ? 'times' : 'times2'}/>
       <Levels setLevel={setLevel} upTimer={upTimer} levelsInfo={levelsInfo} startScreen={startScreen} setStartScreen={setStartScreen} timer={timer}/>
+      <Footer />
     </div>
   );
 }
