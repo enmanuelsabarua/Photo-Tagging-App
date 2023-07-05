@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Photo Tagging Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Photo Tagging Game! This game is designed to test your visual perception and recognition skills as you search for characters in various images. Are you ready to put your detective skills to the test? Let's get started!
 
-## Available Scripts
+## Game Objective
 
-In the project directory, you can run:
+The objective of the game is to find and tag specific characters within an image. Each level will present you with a different image containing multiple characters, and your task is to identify and tag the required characters accurately and efficiently.
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Start the game by launching the application or opening the game website.
+2. Once the game is loaded, you will be presented with an image containing several characters.
+3. Carefully analyze the image and identify the characters specified in the level's objective. It could be one or more characters depending on the level.
+4. Use your mouse or touchpad to click on the identified characters to tag them. A tag will appear over the selected character, indicating that it has been found.
+5. Once you have tagged all the required characters, submit your answer by clicking the "Submit" button.
+6. If your tags are correct, you can save your score (time).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Scoring
 
-### `npm test`
+Your performance in the game will be evaluated based on the following factor:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Time:** The time that you take to find all the characters.
 
-### `npm run build`
+Strive for both accuracy and speed to achieve the best score possible!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Game Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Multiple Difficulty Levels:** The game offers various difficulty levels, starting from easy and progressing to more challenging levels as you improve.
+- **Leaderboards:** Compete against other players and see how your scores stack up on the global leaderboards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
 
-### `npm run eject`
+The Photo Tagging Game was created by Enmanuel Sanchez Abarúa as a part of The Odin Project course.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy the game and happy tagging!
