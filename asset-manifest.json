@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Photo-Tagging-App/static/css/main.a23a47c6.css",
+    "main.js": "/Photo-Tagging-App/static/js/main.50a497e9.js",
+    "static/media/ad-2222-undrcty.webp": "/Photo-Tagging-App/static/media/ad-2222-undrcty.3126a3ef85f303f8aa8a.webp",
+    "static/media/A.D.-2.222.webp": "/Photo-Tagging-App/static/media/A.D.-2.222.e1da923423f8be74aea1.webp",
+    "static/media/spider-man.png": "/Photo-Tagging-App/static/media/spider-man.01f45d55d31a5e6b78c8.png",
+    "static/media/mikasa-ackerman.webp": "/Photo-Tagging-App/static/media/mikasa-ackerman.39389fe1763d94e92756.webp",
+    "static/media/zoidberg.png": "/Photo-Tagging-App/static/media/zoidberg.3c7796cf3c992c18e261.png",
+    "static/media/patrick-star.webp": "/Photo-Tagging-App/static/media/patrick-star.7a323c1210da014a7a8f.webp",
+    "static/media/roger.webp": "/Photo-Tagging-App/static/media/roger.38d5b7d58da318162209.webp",
+    "static/media/Serendius-ajjo.otf": "/Photo-Tagging-App/static/media/Serendius-ajjo.54dba1ce77210e36fccd.otf",
+    "static/media/jake.png": "/Photo-Tagging-App/static/media/jake.37555c72258e49ec14dc.png",
+    "index.html": "/Photo-Tagging-App/index.html",
+    "main.a23a47c6.css.map": "/Photo-Tagging-App/static/css/main.a23a47c6.css.map",
+    "main.50a497e9.js.map": "/Photo-Tagging-App/static/js/main.50a497e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a23a47c6.css",
+    "static/js/main.50a497e9.js"
+  ]
+}
