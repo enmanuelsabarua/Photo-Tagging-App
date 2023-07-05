@@ -54,8 +54,6 @@ function App() {
       let updSecond = seconds - (hour * 3600 + minute * 60);
 
       setTime(hour + ":" + minute + ":" + updSecond);
-
-      // document.querySelector('.timer').innerHTML = hour + ":" + minute + ":" + updSecond;
   }
 
   const levelsInfo = [
@@ -139,7 +137,7 @@ function App() {
   return (
     <div>
       <Header time={time} setCounter={setCounter} counter={counter} characterSelection={characterSelection} upTimer={upTimer} levelsInfo={levelsInfo} level={level} setStartScreen={setStartScreen}  timer={timer}/>
-      <Image setCounter={setCounter} counter={counter} time={time} setCharacterSelection={setCharacterSelection} image={level} height={level === image2 ? 3395 : 3150} charactersPosition={level === image1 ? charactersPosition.charactersPosition1 : charactersPosition.charactersPosition2}/>
+      <Image setStartScreen={setStartScreen} setCounter={setCounter} counter={counter} time={time} setCharacterSelection={setCharacterSelection} image={level} height={level === image2 ? 3395 : 3150} charactersPosition={level === image1 ? charactersPosition.charactersPosition1 : charactersPosition.charactersPosition2} collections={level === image1 ? 'times' : 'times2'}/>
       <Levels setLevel={setLevel} upTimer={upTimer} levelsInfo={levelsInfo} startScreen={startScreen} setStartScreen={setStartScreen} timer={timer}/>
     </div>
   );

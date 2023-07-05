@@ -92,6 +92,9 @@
 }
 
 .finished-time {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
     position: fixed;
     text-align: center;
     top: 50vh;
@@ -135,4 +138,11 @@
 .continue-btn:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+#name {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
 }

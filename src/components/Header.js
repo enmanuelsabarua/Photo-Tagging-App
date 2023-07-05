@@ -12,6 +12,7 @@ export default function Header({time, counter, setCounter, levelsInfo, level, se
     }, []);
 
     const selectOtherLevel = () => {
+        setCounter(3);
         setStartScreen('levels-background');
         document.querySelectorAll('.level-card').forEach(level => level.classList.add('show-level'));
         timer().stopTimer(1);
